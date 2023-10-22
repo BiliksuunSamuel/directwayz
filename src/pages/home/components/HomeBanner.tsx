@@ -2,6 +2,7 @@ import {
   Button,
   Stack,
   Typography,
+  colors,
   useMediaQuery,
   useTheme,
 } from "@mui/material";
@@ -64,7 +65,7 @@ export default function HomeBanner() {
           direction="row"
           spacing={1}
         >
-          <GoSearch fontSize={"45px"} />
+          <GoSearch color={colors.grey[500]} fontSize={"25px"} />
           {!smallDevice && (
             <>
               <Typography
@@ -94,16 +95,16 @@ export default function HomeBanner() {
           <Stack flex={1}>
             <CustomAutoComplete />
           </Stack>
-          <SizedBox width={smallDevice ? "15px" : "30px"} />
           <Stack>
             <Button
               variant="contained"
               sx={(theme) => ({
                 textTransform: "none",
                 fontSize: theme.spacing(2),
+                height: "38px",
+                borderRadius: theme.spacing(1),
               })}
               disableElevation
-              size={smallDevice ? "small" : "large"}
             >
               Search
             </Button>
