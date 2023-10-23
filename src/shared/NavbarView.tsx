@@ -13,7 +13,7 @@ export default function NavbarView() {
       position="sticky"
       top={0}
       bgcolor={(theme) => theme.palette.background.paper}
-      zIndex={1}
+      zIndex={100}
     >
       <Stack spacing={10} direction="row" width="100%" alignItems="center">
         <Stack width="120px">
