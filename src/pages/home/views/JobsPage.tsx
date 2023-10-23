@@ -1,5 +1,10 @@
 import { Stack } from "@mui/material";
-import { JobsPageBanner } from "../components";
+import {
+  ContactUsView,
+  FooterView,
+  JobsFilterView,
+  JobsPageBanner,
+} from "../components";
 import { GridContainer, SectionViewContainer } from "../../../views";
 import { RecentJobCard } from "../../../components";
 
@@ -8,8 +13,10 @@ export default function JobsPage() {
     <Stack>
       <JobsPageBanner />
       <SectionViewContainer>
-        <Stack direction="row" alignItems="center" justifyContent="flex-start">
-          <Stack></Stack>
+        <Stack direction="row" spacing={4}>
+          <Stack width="200px">
+            <JobsFilterView />
+          </Stack>
           <Stack flex={2.5}>
             <GridContainer>
               {Array.from({ length: 20 }).map((_, i) => (
@@ -19,6 +26,8 @@ export default function JobsPage() {
           </Stack>
         </Stack>
       </SectionViewContainer>
+      <ContactUsView />
+      <FooterView />
     </Stack>
   );
 }

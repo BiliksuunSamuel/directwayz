@@ -3,3 +3,8 @@ export interface INavbarRoute {
   route?: string;
   path?: string[];
 }
+
+export interface IJobSummary {
+  title: string;
+  count: number;
+}
