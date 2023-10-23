@@ -10,6 +10,10 @@ export default function NavbarView() {
     <Stack
       paddingY={(theme) => theme.spacing(3)}
       paddingX={(theme) => theme.spacing(10)}
+      position="sticky"
+      top={0}
+      bgcolor={(theme) => theme.palette.background.paper}
+      zIndex={1}
     >
       <Stack spacing={10} direction="row" width="100%" alignItems="center">
         <Stack width="120px">

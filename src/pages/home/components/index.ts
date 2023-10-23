@@ -6,3 +6,4 @@ export { default as TestimonialView } from "./TestimonialView";
 export { default as ContactUsView } from "./ContactUsView";
 export { default as FAQView } from "./FAQView";
 export { default as FooterView } from "./FooterView";
+export { default as JobsPageBanner } from "./JobsPageBanner";
